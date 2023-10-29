@@ -1,0 +1,40 @@
+/* 
+Add a CSS rule for the body element that sets the background color to #E0E0E2.
+Add a CSS rule for the h1 element that sets the text color to: #721817.
+Add a CSS rule for the h2 element that sets the text color to: #721817.
+Add a CSS rule for the center-text CSS class that aligns the text to center.
+Add a CSS rule for the HTML element with the id logo. Set its left and right margins to auto and changes its display to a block element.
+Add a CSS rule for all span elements that are children of h2 elements that sets the text color to #FA9F42 and its font size to 0.75em.
+Add a CSS rule for the HTML element with the id copyright. Set its top padding to 12 pixels and its font size to 0.75em. */
+
+body {
+    background-color: #E0E0E2;
+}
+
+h1 {
+    color: #721817;
+}
+
+h2 {
+    color: #721817;
+}
+
+.center-text {
+ text-align: center;
+}
+
+#logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 > span {
+    color: #FA9F42;
+    font-size: 0.75em;
+}
+
+#copyright {
+    padding-top: 12px;
+    font-size: 0.75em;
+}

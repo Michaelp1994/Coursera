@@ -1,0 +1,273 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+    5. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+    6. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+    7. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+    8. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+/* end CSS reset */
+/* Start supplied  */
+body {
+  background-color: #fff;
+  font-family: "Markazi Text", serif;
+  margin: 0;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+footer img {
+  display: block;
+  height: 250px;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+  display: flex;
+  gap: 32px;
+}
+
+nav li {
+  flex: 1;
+}
+
+@media only screen and (max-width: 1280px) {
+  nav ul {
+    display: none;
+  }
+}
+
+section {
+  display: flex;
+  gap: 24px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+article {
+  flex: 1;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2b2b2b;
+  color: white;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 128px;
+  padding-right: 128px;
+}
+
+.footerImage {
+  flex: 1;
+  width: 48px;
+  height: 48px;
+}
+
+/* end supplied */
+@font-face {
+  font-family: "godivareguler";
+  src: url("../assets/godiva_reguler-webfont.woff2") format("woff2"),
+    url("../assets/godiva_reguler-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Roboto", serif;
+}
+
+.hero-image {
+  background-image: url("../assets/background.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-text {
+  flex: 1;
+  color: white;
+  font-size: 42px;
+  padding-left: 60px;
+}
+
+nav {
+  height: 150px;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 16px;
+  padding-right: 32px;
+}
+
+body,
+html,
+header {
+  height: 100%;
+}
+
+.logo {
+  display: block;
+  height: 100px;
+}
+
+.companyName {
+  font-family: "godivareguler";
+  /* color: white; */
+  color: rgb(181, 52, 52);
+  font-size: 5rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+.leftSide {
+  display: flex;
+  gap: 16px;
+}
+
+nav {
+  position: absolute;
+  width: 100%;
+}
+
+li a {
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+li a:hover {
+  text-decoration: underline;
+}
+
+main {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 64px;
+}
+
+.mainArticle h1 {
+  text-align: center;
+  margin-bottom: 50px;
+  color: rgb(181, 52, 52);
+}
+
+.mainArticle p {
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 24px;
+  text-align: justify;
+}
+
+.verticalLine {
+  width: 100%;
+  border-top: 2px rgb(181, 52, 52) solid;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card > img {
+  height: 240px;
+  width: 100%;
+  display: block;
+}
+
+.cardContents {
+  padding: 16px;
+}
+
+.cardContents h2 {
+  padding-bottom: 12px;
+  color: rgb(181, 52, 52);
+}
+
+.cardActions {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+
+.cardActions a {
+  padding: 16px;
+  color: rgb(181, 52, 52);
+}

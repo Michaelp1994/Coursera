@@ -1,0 +1,28 @@
+/* Properties for other selectors */
+* {
+	padding: 0;
+	margin: 0;
+	color: pink;
+}
+  
+.container {
+	min-height: 100vh;
+	background-color:bisque;
+}
+  
+.letters {
+	display: flex;
+	justify-content: center;
+	padding-top: 20px;
+	margin-bottom: 20px;
+	text-transform:uppercase;
+	font-size: 60px;
+}
+
+/* Add rules for the element 'p' present inside the class 'letters' using descendant selector */
+
+
+/* Add rules for steps 8 and 9 */
+
+
+/* Add rules for steps 10 and 11 */

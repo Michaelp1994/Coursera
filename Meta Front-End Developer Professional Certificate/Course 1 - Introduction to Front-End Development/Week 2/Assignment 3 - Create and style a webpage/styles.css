@@ -1,0 +1,22 @@
+/*
+Add a CSS rule for your image that sets the border property to 2 pixels wide with a solid blue color.
+Add a CSS rule for heading 1 containing your name and set its color to blue.
+Add a CSS rule for all <h2> headings and set their color to grey.
+Add a CSS rule that applies a margin of 4 pixels to the divider elements.
+*/
+
+#photo {
+    border: 2px solid blue;
+}
+
+h1 {
+    color: blue;
+}
+
+h2 {
+    color: grey;
+}
+
+div {
+    margin: 4px;
+}
