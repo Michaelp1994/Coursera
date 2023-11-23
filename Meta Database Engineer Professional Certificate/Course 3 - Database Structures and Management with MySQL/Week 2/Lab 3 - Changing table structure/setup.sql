@@ -1,0 +1,5 @@
+DROP DATABASE IF EXISTS Mangata_Gallo;
+
+CREATE DATABASE IF NOT EXISTS Mangata_Gallo;
+
+USE Mangata_Gallo;
