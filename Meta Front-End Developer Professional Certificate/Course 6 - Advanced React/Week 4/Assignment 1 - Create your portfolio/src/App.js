@@ -1,24 +1,27 @@
 import { ChakraProvider } from "@chakra-ui/react";
+import Alert from "./components/Alert";
+import ContactMeSection from "./components/ContactMeSection";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import LandingSection from "./components/LandingSection";
 import ProjectsSection from "./components/ProjectsSection";
-import ContactMeSection from "./components/ContactMeSection";
-import Footer from "./components/Footer";
+import { ScrollProvider } from "./context/ScrollContext";
 import { AlertProvider } from "./context/alertContext";
-import Alert from "./components/Alert";
 
 function App() {
   return (
     <ChakraProvider>
       <AlertProvider>
-        <main>
-          <Header />
-          <LandingSection />
-          <ProjectsSection />
-          <ContactMeSection />
-          <Footer />
-          <Alert />
-        </main>
+        <ScrollProvider>
+          <main>
+            <Header />
+            <LandingSection />
+            <ProjectsSection />
+            <ContactMeSection />
+            <Footer />
+            <Alert />
+          </main>
+        </ScrollProvider>
       </AlertProvider>
     </ChakraProvider>
   );
