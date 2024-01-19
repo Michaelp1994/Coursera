@@ -46,6 +46,7 @@ module.exports = {
                     {
                         ignorePatterns: true,
                         pattern: {
+                            jpg: "always",
                             js: "never",
                             jsx: "never",
                             ts: "never",

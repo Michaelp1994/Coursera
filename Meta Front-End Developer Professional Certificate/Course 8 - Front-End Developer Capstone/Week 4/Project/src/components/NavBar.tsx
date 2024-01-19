@@ -36,20 +36,21 @@ const NavBar: React.FC<Props> = () => {
 
 const StyledNav = styled.nav`
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    height: 100px;
+    justify-content: center;
+    height: 124px;
     background-color: #ffffff;
-    padding-left: 12rem;
-    padding-right: 12rem;
     border-bottom: 1px solid black;
 `;
+
 const LogoImg = styled.img`
-    height: 75px;
+    height: 76px;
 `;
 
 const NavBarItems = styled.ul`
+    font: Karla;
     display: flex;
+    padding-left: 31px;
     height: 100%;
     align-items: center;
     list-style: none;
@@ -61,8 +62,8 @@ const NavBarItem = styled.li`
     height: 100%;
     display: flex;
     align-items: center;
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 14px;
+    padding-right: 14px;
 
     & a {
         color: black;

@@ -13,7 +13,7 @@ const layout: React.FC<Props> = () => {
             <main>
                 <Outlet />
             </main>
-            <Toaster />
+            <Toaster data-testid="toaster" />
             <Footer />
         </>
     );

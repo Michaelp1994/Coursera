@@ -1,6 +1,6 @@
 import React from "react";
 import { CalendarIcon } from "lucide-react";
-import { format, isValid, add, startOfDay } from "date-fns";
+import { add, startOfDay } from "date-fns";
 import TimeKeeper, { TimeOutput } from "react-timekeeper";
 
 import {
@@ -58,6 +58,7 @@ const DatePicker: React.FC<Props> = ({ value, onChange }) => {
         <Popover>
             <PopoverTrigger asChild>
                 <Button
+                    data-testid="datepicker"
                     variant="outline"
                     size="icon"
                     className="flex h-full aspect-square w-full"
